@@ -1,0 +1,72 @@
+# -------------------------------------------------------------------
+# General Exclusions (Applicable to the entire repository)
+# -------------------------------------------------------------------
+
+# Sensitive Environment Variables
+# **Crucially, this will ignore both your client/.env and server/.env files**
+.env
+
+# Logs and various temporary files
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Dependency lock files (Keep one, ignore others)
+package-lock.json # Uncomment this if you prefer yarn.lock
+# yarn.lock # Uncomment this if you prefer package-lock.json
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+---
+
+# 💻 Client (React) Specific Exclusions
+# Files inside the client/ folder
+# -------------------------------------------------------------------
+
+# Dependency folder
+client/node_modules
+
+# Build output folder
+client/build
+client/dist
+client/out
+
+# Storybook and other UI component tools
+.storybook
+storybook-static
+
+# Gatsby/Next.js/CRA cache files (adjust if using specific framework)
+.cache
+.next
+.parcel-cache
+.quasar
+
+---
+
+# ⚙️ Server (Express) Specific Exclusions
+# Files inside the server/ folder
+# -------------------------------------------------------------------
+
+# Dependency folder
+server/node_modules
+
+# Build output and compiled files (if you use TypeScript or Babel)
+server/dist
+server/build
+
+# IDE/Editor files (e.g., VS Code settings)
+.vscode
+.idea
+
+# Miscellaneous temporary files
+*.tgz
+
+
+server/.env
+client/.env
