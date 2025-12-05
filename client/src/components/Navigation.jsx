@@ -9,7 +9,7 @@ const Navigation = () => {
     { name: 'Home', href: '#home' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
-    { name: 'Resume', href: RESUME_URL },
+    { name: 'Resume', href: '#footer' },
   ]
 
   return (
