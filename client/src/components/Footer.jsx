@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 const RESUME_URL = 'https://drive.google.com/file/d/1qUYeAqRVQfwQMUvfCSEIfmZDFKBw5Oyz/view'
 const Footer = () => {
   return (
-    <footer className="bg-[#FFFEF9] border-t border-[rgba(99,102,241,0.1)] mt-16 py-10 px-6 relative">
+    <footer id = "footer" className="bg-[#FFFEF9] border-t border-[rgba(99,102,241,0.1)] mt-16 py-10 px-6 relative">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
