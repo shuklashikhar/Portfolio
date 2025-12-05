@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
-
+const RESUME_URL = 'https://drive.google.com/file/d/1qUYeAqRVQfwQMUvfCSEIfmZDFKBw5Oyz/view'
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -9,7 +9,7 @@ const Navigation = () => {
     { name: 'Home', href: '#home' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
-    { name: 'Resume', href: import.meta.env.VITE_RESUME_URL },
+    { name: 'Resume', href: RESUME_URL },
   ]
 
   return (
